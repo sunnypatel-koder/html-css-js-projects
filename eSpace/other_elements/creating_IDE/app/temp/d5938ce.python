@@ -1,0 +1,9 @@
+from selenium import webdriver
+import time
+import pyautogui
+
+web = webdriver.Chrome() 
+web.get('https://google.com/')
+move = web.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input')
+pyautogui.moveTo(500,500,duration=1)
+time.sleep(2)

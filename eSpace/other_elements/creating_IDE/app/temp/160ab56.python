@@ -1,0 +1,6 @@
+from selenium import webdriver
+import time
+
+web = webdriver.Chrome() 
+web.get('https://google.com/')
+time.sleep(2)

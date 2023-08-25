@@ -1,0 +1,33 @@
+/* -----------Main_Content---------- */
+
+.main {
+    margin-left: 220px;
+    display: flex;
+    padding: 10px;
+}
+
+
+/* ----section--main-notes------ */
+
+.main .main_notes {
+    width: 80%;
+    position: relative;
+    padding-top: 40px;
+    border-right: 1px solid #f1f1f1;
+    /* box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); */
+}
+
+
+/* -----section--advt_right----- */
+
+.main .advt_right {
+    width: 20%;
+    text-align: center;
+}
+
+.main .advt_right .box {
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: rgba(255, 0, 255, 0.493);
+}

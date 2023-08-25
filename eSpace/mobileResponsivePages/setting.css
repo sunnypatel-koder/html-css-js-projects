@@ -1,0 +1,65 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ h1 {
+     display: flex;
+     justify-content: space-between;
+     padding: 11px;
+     border-bottom: 5px solid tomato;
+ }
+ 
+ .update {
+     padding: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ .profile-upload img {
+     width: 100px;
+     border-radius: 100px;
+ }
+ 
+ .update span {
+     color: rgba(0, 0, 0, 0.926);
+ }
+ 
+ .update input {
+     width: 220px;
+     padding: 10px;
+     margin: 5px;
+     border-radius: 10px;
+     outline: none;
+     border: 1px solid rgba(0, 0, 0, 0.322);
+ }
+ 
+ .update input:focus {
+     border: 1px solid tomato;
+     border-bottom: 5px solid tomato;
+ }
+ 
+ .update select {
+     width: 245px;
+     padding: 10px;
+     margin: 5px;
+     border-radius: 10px;
+     outline: none;
+     font-size: 14px;
+     border: 1px solid rgba(0, 0, 0, 0.322);
+ }
+ 
+ .update button {
+     padding: 10px 20px;
+     border-radius: 10px;
+     outline: none;
+     background-color: tomato;
+     color: white;
+     border: none;
+     cursor: pointer;
+     font-size: 14px;
+     letter-spacing: 1px;
+ }

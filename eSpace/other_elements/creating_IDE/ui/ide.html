@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.13/ace.js" integrity="sha512-OMjy8oWtPbx9rJmoprdaQdS2rRovgTetHjiBf7RL7LvRSouoMLks5aIcgqHb6vGEAduuPdBTDCoztxLR+nv45g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Codeboard Online IDE</title>
+</head>
+
+<body>
+    <div class="header">Code Online IDE</div>
+    <div class="control-panel">
+        Select Language: &nbsp; &nbsp;
+        <select name="languages" onchange="changeLanguage()" id="languages" class="languages">
+            <option value="c">C</option>
+            <option value="Cpp">C++</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="node">Node JS</option>
+        </select>
+    </div>
+
+    <div id="editor"></div>
+
+    <div class="button-container">
+        <div class="btn" onclick="executeCode()"> Run </div>
+
+    </div>
+    <div class="output"></div>
+
+    <script src="js/ide.js"></script>
+    <!-- <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/lib/ace.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

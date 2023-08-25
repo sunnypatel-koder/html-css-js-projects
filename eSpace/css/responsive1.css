@@ -1,0 +1,76 @@
+/* ----------Responsive--------------- */
+
+@media screen and (max-width:500px) {
+    #sidenav {
+        width: 250px;
+    }
+    .main {
+        padding: 5px;
+    }
+     #my_pdf_viewer #canvas_container #pdf_renderer {
+        width: 100%;
+    }
+    #zoom_controls {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /* ----------header--------- */
+    .header #profile,
+    .header #branchYearSem {
+        display: none;
+    }
+    .header #branch {
+        display: block;
+    }
+}
+
+#navbar ul #menu,
+#navbar ul #dot_menu {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    /* ------------navbar------------- */
+    #navbar ul #click_Search,
+    #navbar ul #click_Setting,
+    #navbar ul .shift_dot {
+        display: none;
+    }
+    /* ------------main---------- */
+    .main .advt_right {
+        display: none;
+    }
+    .main .main_notes {
+        width: 100%;
+    }
+    #navbar ul #dot_menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    /* -------sideNav------- */
+    #help_sidenav {
+        display: none;
+    }
+    #sidenav {
+        z-index: 10;
+        display: none;
+    }
+    .main .main_notes .speech {
+        display: none;
+    }
+    #navbar ul #menu {
+        display: block;
+    }
+    /* --------Main Content------ */
+    .main {
+        margin-left: 0px;
+    }
+    /* ---------modal------ */
+    .modal {
+        padding-top: 10px;
+    }
+}

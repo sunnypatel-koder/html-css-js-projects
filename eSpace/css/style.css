@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    /* user-select: none; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subjects_testing {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.subjects_testing a {
+    margin-top: 4px;
+}
+
+.main .main_notes .play_buttons ul {
+    border-radius: 50px;
+    width: 250px;
+    display: flex;
+    float: right;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.main .main_notes .play_buttons ul li {
+    padding: 7px 20px;
+    border-radius: 4px;
+}
+
+
+/* THe main notes */
+
+.main .main_notes .notes_field h1{
+    padding:10px;
+}
+
+.main .main_notes .notes_field .topics{
+    padding:10px;
+}
+
+.main .main_notes .notes_field .topics ol{
+    padding:10px;
+}
+
+
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Modal Content */
+
+#searchModal .modal-content {
+    margin: auto;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 570px;
+    border-radius: 5px;
+}
+
+
+/* ---userSetting---Modal----- */
+
+#userSetting .modal-content {
+    margin: auto;
+    width: 75%;
+    margin-top: 10px;
+    height: 570px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.next_prev {
+    /* background-color: #04AA6D; */
+    background-color: transparent;
+    /* color: white; */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    outline:none;
+}
+
+#current_page {
+    padding: 7px 0px;
+    width: 25px;
+    text-align: center;
+    outline: none;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    outline:none;
+}
+
+.plus_minus {
+    /* background-color: #04AA6D; */
+    /* color: white; */
+    background-color: transparent;
+    border: none;
+    padding: 7px;
+    margin-right: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

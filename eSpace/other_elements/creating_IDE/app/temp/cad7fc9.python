@@ -1,0 +1,20 @@
+from selenium import webdriver
+import time
+import pyautogui
+
+web = webdriver.Chrome()
+web.get('https://urise.up.gov.in/student/login')
+time.sleep(1)
+
+close2 = web.find_element_by_xpath('/html/body/div[2]/div/div/div[1]/button/span')
+close2.click()
+
+el = web.find_element_by_xpath('/html/body/div[1]/section/div/div[2]/div/form/div[1]/div/input')
+time.sleep(1)
+text = "UR202000173757"
+for character in text:
+    el.send_keys(character)
+    time.sleep(0.3)
+
+
+# pyautogui.write("UR202000173757",interval=0.2)
